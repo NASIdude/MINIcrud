@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Overpass", sans-serif;
+}
+
+/* begin header */
+
+header {
+  width: 100%;
+  height: auto;
+}
+
+.navbar {
+  padding: 12px;
+  background-color: beige;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  transition-duration: 1s;
+}
+
+.navbar a {
+  margin: 6px;
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* einde header */
+
+/* begin main */
+
+main {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  background-color: lightcyan;
+}
+
+h1 {
+  text-align: center;
+}
+
+.begin-stuk {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.begin-stuk P {
+  color: #fff;
+  background-color: #000;
+}
+
+/* einde header */
