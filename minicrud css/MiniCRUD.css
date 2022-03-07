@@ -58,4 +58,27 @@ h1 {
   background-color: #000;
 }
 
-/* einde header */
+.doei {
+  background-color: blue;
+}
+
+/* einde main */
+
+/* begin footer */
+
+footer {
+  width: 100%;
+  height: auto;
+}
+
+.footbar {
+  width: 100%;
+  height: auto;
+  background: beige;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px;
+}
+
+/* einde footer */
