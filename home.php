@@ -21,9 +21,15 @@
     <main>
         <h1>Welkom bij Ling Ling's Pizzeria 🍕.</h1>
         <div class="begin-stuk">
-            <p>Deze pizza worden stuk voor stuk vers en overheerlijk gebakken recht voor u neus.</p>
-        </div>    
+            <p>Dit is pizza.</p>
+        </div>
     </main>
+    <footer>
+        <div class="footbar">
+            <p>Gemaakt door Naser Jafari ©.</p>
+        </div>
+    </footer>
+    
     <script src="js/alles.js"></script>
 </body>
 </html>
