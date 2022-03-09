@@ -15,7 +15,7 @@ header {
 
 .navbar {
   padding: 12px;
-  background-color: #91a8a4;
+  background-color: #000;
   text-align: center;
   font-size: 16px;
   font-weight: 600;
@@ -25,17 +25,17 @@ header {
 .navbar a {
   margin: 6px;
   text-decoration: none;
-  color: #000;
+  color: #fff;
+  filter: brightness(90%);
 }
 
 .navbar a:hover {
   text-decoration: underline;
 }
 
-h1 {
+.begin-stuk h1 {
+  padding: 20px;
   text-align: center;
-  margin: 20px;
-  background-color: #9ae19d;
 }
 
 .begin-stuk {
