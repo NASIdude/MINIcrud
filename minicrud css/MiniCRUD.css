@@ -15,7 +15,7 @@ header {
 
 .navbar {
   padding: 12px;
-  background-color: beige;
+  background-color: #91a8a4;
   text-align: center;
   font-size: 16px;
   font-weight: 600;
@@ -37,14 +37,18 @@ header {
 /* begin main */
 
 main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
   height: auto;
   padding: 15px;
-  background-color: lightcyan;
+  background-color: #ceb5a7;
 }
 
 h1 {
   text-align: center;
+  margin: 20px;
 }
 
 .begin-stuk {
@@ -54,12 +58,8 @@ h1 {
 }
 
 .begin-stuk P {
-  color: #fff;
-  background-color: #000;
-}
-
-.doei {
-  background-color: blue;
+  color: #2b2c28;
+  background-color: #afdedc;
 }
 
 /* einde main */
@@ -74,11 +74,15 @@ footer {
 .footbar {
   width: 100%;
   height: auto;
-  background: beige;
+  background: #eaefb1;
   text-align: center;
   font-size: 16px;
   font-weight: 600;
-  padding: 12px;
+  padding: 10px;
+}
+
+.footbar p {
+  margin: 3px;
 }
 
 /* einde footer */
