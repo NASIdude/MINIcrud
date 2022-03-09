@@ -23,6 +23,14 @@
         </div>
     </header>
     <main>
+        <?php
+
+        $naam = "Naser";
+        $ding = "Jafari;"
+
+        echo $naam; . $ding;
+
+        ?>
     </main>
     <footer>
         <div class="footbar">
