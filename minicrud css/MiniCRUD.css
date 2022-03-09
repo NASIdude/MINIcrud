@@ -32,6 +32,23 @@ header {
   text-decoration: underline;
 }
 
+h1 {
+  text-align: center;
+  margin: 20px;
+  background-color: #9ae19d;
+}
+
+.begin-stuk {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.begin-stuk P {
+  color: #2b2c28;
+  background-color: #afdedc;
+}
+
 /* einde header */
 
 /* begin main */
@@ -44,22 +61,6 @@ main {
   height: auto;
   padding: 15px;
   background-color: #ceb5a7;
-}
-
-h1 {
-  text-align: center;
-  margin: 20px;
-}
-
-.begin-stuk {
-  width: 100%;
-  height: auto;
-  text-align: center;
-}
-
-.begin-stuk P {
-  color: #2b2c28;
-  background-color: #afdedc;
 }
 
 /* einde main */
