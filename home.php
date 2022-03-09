@@ -17,12 +17,12 @@
             <a href="https://www.minecraft.net/nl-nl"  target="_blank">Minecraft</a>
             <a href="https://www.nintendo.nl/#" target="_blank">Nintendo</a>
         </div>
-    </header>
-    <main>
-        <h1>Welkom bij Ling Ling's Pizzeria 🍕.</h1>
         <div class="begin-stuk">
+            <h1>Welkom bij Ling Ling's Pizzeria 🍕.</h1>
             <p>Dit is pizza.</p>
         </div>
+    </header>
+    <main>
     </main>
     <footer>
         <div class="footbar">
