@@ -29,8 +29,6 @@
         </div>
         <div class="begin-stuk">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ipsam minus adipisci obcaecati accusamus aliquid, repudiandae rem, consequuntur officiis quidem pariatur voluptas ut eaque molestiae voluptatum expedita possimus optio dolorem!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nam consequuntur delectus assumenda possimus inventore veniam, sint corporis dolorem nihil aperiam quaerat ex, aliquam excepturi exercitationem modi quia, iusto sapiente!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus repellat sed perspiciatis ipsum mollitia facere assumenda, suscipit voluptatibus itaque, ipsa facilis, blanditiis asperiores nemo illum? Voluptates dolorum corrupti facere illo.</p>
         </div>
     </main>
     <footer>
