@@ -17,27 +17,26 @@
             <a href="https://www.minecraft.net/nl-nl"  target="_blank">Minecraft</a>
             <a href="https://www.nintendo.nl/#" target="_blank">Nintendo</a>
         </div>
-        <div class="begin-stuk">
-            <h1>Welkom bij Ling Ling's Pizzeria 🍕.</h1>
-            <p>Dit is pizza.</p>
-        </div>
     </header>
     <main>
-        <?php
-
-        $naam = "Naser";
-        $ding = "Jafari;"
-
-        echo $naam; . $ding;
-
-        ?>
+        <div class="info-landing-page">
+            <img src="afbeeldingen/ping.jpg" alt="pizza in de oven">
+            <div class="info-landing-page-tekst">
+                <h1>Welkom bij Ling Ling's Pizzeria 🍕.</h1>
+                <span>Bij onze 69 vestigingen in heel Nederland.</span>
+                <p>Gemaakt door onze beste chefs.</p>
+            </div>
+        </div>
+        <div class="begin-stuk">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ipsam minus adipisci obcaecati accusamus aliquid, repudiandae rem, consequuntur officiis quidem pariatur voluptas ut eaque molestiae voluptatum expedita possimus optio dolorem!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nam consequuntur delectus assumenda possimus inventore veniam, sint corporis dolorem nihil aperiam quaerat ex, aliquam excepturi exercitationem modi quia, iusto sapiente!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus repellat sed perspiciatis ipsum mollitia facere assumenda, suscipit voluptatibus itaque, ipsa facilis, blanditiis asperiores nemo illum? Voluptates dolorum corrupti facere illo.</p>
+        </div>
     </main>
     <footer>
         <div class="footbar">
             <p>Gemaakt door Naser Jafari ©.</p>
-            <p>PHP, CSS, JavaScript, SQL.</p>
         </div>
     </footer>
     <script src="js/alles.js"></script>
-</body>
-</html>
+</body> 
