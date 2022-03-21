@@ -1,28 +1,15 @@
-const a = "monkey";
-console.log(a);
+var parallaxElements = $(".parallax"),
+  parallaxQuantity = parallaxElements.length;
 
-const donkey = document.querySelector("#tekst");
-console.log(donkey);
+$(window).on("scroll", function () {
+  window.requestAnimationFrame(function () {
+    for (var i = 0; i < parallaxQuantity; i++) {
+      var currentElement = parallaxElements.eq(i);
+      var scrolled = $(window).scrollTop();
 
-donkey.innerHTML = "Monkey is een dier";
-donkey.style.color = "red";
-
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
-};
-
-/*<div class="ding "id="tekst">
-    <p>dit is een tekst</p>
-</div>
-
-.ding {
-  padding: 15px;
-}
-*/
+      currentElement.css({
+        transform: "translate3d(0," + scrolled * -0.3 + "px, 0)",
+      });
+    }
+  });
+});
