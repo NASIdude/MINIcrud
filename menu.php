@@ -12,27 +12,19 @@
 </head>
 <body>
     <header>
-        <div class="navbar">
-            <a href="https://github.com/" target="_blank">Github</a>
-            <a href="https://www.minecraft.net/nl-nl"  target="_blank">Minecraft</a>
-            <a href="https://www.nintendo.nl/#" target="_blank">Nintendo</a>
-        </div>
+        <nav>
+            <ul>
+                <li><a href="https://github.com/" target="_blank">Github</a></li>
+                <li><a href="https://www.minecraft.net/nl-nl"  target="_blank">Minecraft</a></li>
+                <li><a href="https://www.nintendo.nl/#" target="_blank">Nintendo</a></li>
+                <li><a href="https://www.w3schools.com//" target="_blank">W3Schools</a></li>
+            </ul>
+        </nav>
         <div class="begin-stuk">
             <h1>Welkom bij Ling Ling's Pizzeria 🍕.</h1>
         </div>
     </header>
     <main>
-        <?php
-        if(isset($_POST['knop'])) {
-            $naam = $_POST['voornaam'];
-            $achternaam = $_POST['achternaam'];
-            $plaats = $_POST['plaats'];
-
-            echo $naam;
-            echo $achternaam;
-            echo $plaats;
-        }
-        ?>
     </main>
     <footer>
         <div class="footbar">

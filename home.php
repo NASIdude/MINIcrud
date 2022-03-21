@@ -32,25 +32,18 @@
             </div>
         </div>
         <div class="begin-stuk">
-            <h2>Welkom</h2>
-            <div class="welkom-tekst">
-                <p>Onze authentieke pizza's zijn beroemd in de buurt en wordt al ruim 20 jaar in een steenoven gebakken.</p>
+            <img src="afbeeldingen/main achtergrond.jpg" alt="pizza in de oven">
+            <div class="begin-welkom-tekst">
+                <h2>Welkom</h2>
+                <p>bij Ling Ling's pizzeria! Onze authentieke pizza's zijn beroemd in de buurt en worden al ruim 20 jaar in een steenoven gebakken.</p>
             </div>
         </div>
-        <form action="menu.php" method="post">
-            <input type="text" name="voornaam" placeholder="voornaam">
-            <input type="text" name="achternaam" placeholder="achternaam">
-            <input type="text" name="plaats" placeholder="plaats">
-            <div class="knop-menu">
-                <input type="submit" value="submit" name="knop">
-            </div>
-        </form>
     </main>
     <footer>
         <div class="footbar">
             <p>Gemaakt door Naser Jafari ©.</p>
         </div>
     </footer>
-    <script src="./javascript/alles.js"></script>
+    <script src="javascript/alles.js"></script>
 </body>
 </html>
