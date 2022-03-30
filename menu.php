@@ -12,17 +12,9 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="https://github.com/" target="_blank">Github</a></li>
-                <li><a href="https://www.minecraft.net/nl-nl"  target="_blank">Minecraft</a></li>
-                <li><a href="https://www.nintendo.nl/#" target="_blank">Nintendo</a></li>
-                <li><a href="https://www.w3schools.com//" target="_blank">W3Schools</a></li>
-            </ul>
-        </nav>
-        <div class="begin-stuk">
-            <h1>Welkom bij Ling Ling's Pizzeria 🍕.</h1>
-        </div>
+        <?php
+            include "includes/header.php"
+        ?>
     </header>
     <main>
     </main>
