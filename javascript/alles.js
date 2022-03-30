@@ -1,15 +1,27 @@
-var parallaxElements = $(".parallax"),
-  parallaxQuantity = parallaxElements.length;
+var myIndex = 0;
+carousel();
 
-$(window).on("scroll", function () {
-  window.requestAnimationFrame(function () {
-    for (var i = 0; i < parallaxQuantity; i++) {
-      var currentElement = parallaxElements.eq(i);
-      var scrolled = $(window).scrollTop();
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {
+    myIndex = 1;
+  }
+  x[myIndex - 1].style.display = "block";
+  setTimeout(carousel, 5000);
+}
 
-      currentElement.css({
-        transform: "translate3d(0," + scrolled * -0.3 + "px, 0)",
-      });
-    }
-  });
-});
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+};
