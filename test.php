@@ -19,14 +19,17 @@
             <a href="#contact">Contact</a>
         </div>
     </header>
-    <form id="inloggen">
-        <label>Username</label>
-        <input type="text" name="voornaam" placeholder="voornaam"/>
-        <label>Password</label>
-        <input type="text" name="achternaam" placeholder="achternaam"/>
+    <main>
+        <form id="inloggen">
+            <label>Username</label>
+            <input type="text" name="voornaam" placeholder="voornaam"/>
+            <label>Password</label>
+            <input type="text" name="achternaam" placeholder="achternaam"/>
 
-        <button type="submit">Login</button>
-    </form>
-    <script src="javascript/alles.js"></script>
+            <button type="submit">Login</button>
+        </form>
+        <div id="info"></div>
+    </main>
+    <script src="javascript/test.js"></script>
 </body>
 </html>
