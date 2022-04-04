@@ -6,16 +6,16 @@
 padding: 15px;
 } */
 
-// var prevScrollpos = window.pageYOffset;
-// window.onscroll = function () {
-//   var currentScrollPos = window.pageYOffset;
-//   if (prevScrollpos > currentScrollPos) {
-//     document.getElementById("navbar").style.top = "0";
-//   } else {
-//     document.getElementById("navbar").style.top = "-50px";
-//   }
-//   prevScrollpos = currentScrollPos;
-// };
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+};
 
 // const inputs = document.querySelectorAll("#inloggen input");
 // const button = document.querySelector("#inloggen button");
@@ -38,3 +38,16 @@ padding: 15px;
 
 // donkey.innerHTML = "Monkey is een dier";
 // donkey.style.color = "red";
+
+const div = document.querySelector("#info");
+
+fetch("https://pokeapi.co/api/v2/berry/")
+  .then((response) => {
+    return response.json();
+  })
+  .then((berrys) => {
+    console.log(berrys);
+    berrys.results.forEach((berry) => {
+      div.innerHTML += "<div>" + berry["name"] + "</div>";
+    });
+  });
