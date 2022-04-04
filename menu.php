@@ -13,10 +13,13 @@
 <body>
     <header>
         <?php
-            include "includes/header.php"
+            include("includes/header.php")
         ?>
     </header>
     <main>
+        <?php
+            include_once("includes/connect.php");
+        ?>
     </main>
     <footer>
         <div class="footbar">
