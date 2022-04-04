@@ -14,39 +14,41 @@
 <body>
     <footer>
         <div class="footbar">
-            <div class="openingstijden">
-                <p>Openingstijden</p>
-                <ul>
-                    <li>Maandag: 17:00 - 21:00</li><br>
-                    <li>Dinsdag: 17:00 - 21:00</li><br>
-                    <li>Woensdag: 17:00 - 21:00</li><br>
-                    <li>Donderdag: 17:00 - 21:00</li><br>
-                    <li>Vrijdag: 15:00 - 23:00</li><br>
-                    <li>Zaterdag: 14:00 - 22:00</li><br>
-                    <li>Zondag: 10:00 - 18:00</li><br>
-                </ul>
-            </div>
-            <div class="social-media">
-                <p>Volg ons op de sociale media.</p>
-                <ul>
-                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Instagram</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"  target="_blank">Facebook</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Twitter</a></li>
-                </ul>
-            </div>
-            <div class="adres">
-                <p>Hier kan je ons vinden</p>
-                <ul>
-                    <li>Heyendaalseweg 98</li><br>
-                    <li>6525 AW Nijmegen</li><br>
-                    <li>024 890 4500</li><br>
-                </ul>
-            </div>
-            <div class="map">
-                <iframe src="https://www.bing.com/maps/embed?h=400&w=500&cp=51.827145037032615~5.8690595626831055&lvl=16&typ=d&sty=h&src=SHELL&FORM=MBEDV8" scrolling="no"></iframe>
-                <div style="white-space: nowrap; text-align: center; width: 500px; padding: 6px 0;">
-                    <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=51.827145037032615~5.8690595626831055&amp;sty=h&amp;lvl=16&amp;FORM=MBEDLD">Grotere kaart weergeven</a> &nbsp; | &nbsp;
-                    <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=51.827145037032615~5.8690595626831055&amp;sty=h&amp;lvl=16&amp;rtp=~pos.51.827145037032615_5.8690595626831055____&amp;FORM=MBEDLD">Routebeschrijving weergeven</a>
+            <div class="info-website-footer">
+                <div class="openingstijden">
+                    <p>Openingstijden</p>
+                    <ul>
+                        <li>Maandag: 17:00 - 21:00</li><br>
+                        <li>Dinsdag: 17:00 - 21:00</li><br>
+                        <li>Woensdag: 17:00 - 21:00</li><br>
+                        <li>Donderdag: 17:00 - 21:00</li><br>
+                        <li>Vrijdag: 15:00 - 23:00</li><br>
+                        <li>Zaterdag: 14:00 - 22:00</li><br>
+                        <li>Zondag: 10:00 - 18:00</li><br>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <p>Volg ons op de sociale media.</p><br>
+                    <ul>
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"  target="_blank"><img src="afbeeldingen/instagram.png" alt="instagram"></a></li>
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"  target="_blank"><img src="afbeeldingen/facebook.png" alt="facebook"></a></li>
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="afbeeldingen/twitter.png" alt="twitter"></a></li>
+                    </ul>
+                </div>
+                <div class="adres">
+                    <p>Hier kan je ons vinden</p>
+                    <ul>
+                        <li>Heyendaalseweg 98</li><br>
+                        <li>6525 AW Nijmegen</li><br>
+                        <li>024 890 4500</li><br>
+                    </ul>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.bing.com/maps/embed?h=400&w=500&cp=51.827145037032615~5.8690595626831055&lvl=16&typ=d&sty=h&src=SHELL&FORM=MBEDV8" scrolling="no"></iframe>
+                    <div class="map-link">
+                        <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=51.827145037032615~5.8690595626831055&amp;sty=h&amp;lvl=16&amp;FORM=MBEDLD">Grotere kaart weergeven</a> &nbsp;
+                        <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=51.827145037032615~5.8690595626831055&amp;sty=h&amp;lvl=16&amp;rtp=~pos.51.827145037032615_5.8690595626831055____&amp;FORM=MBEDLD">Routebeschrijving weergeven</a><br>
+                    </div>
                 </div>
             </div>
             <div class="inner-footer flex"></div>

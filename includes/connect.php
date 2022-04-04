@@ -1,15 +1,24 @@
 <?php
-$servername = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "minicrud";
+    $host = 'localhost';
+    $db = 'minicrud';
+    $user = 'root';
+    $pass = '';
+    $charset = 'utf8mb4';
 
-try {
-  $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-  
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION;
+    $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+    $opt = [
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+        PDO::ATTR_EMULATE_PREPARES => false,
+    ];
+
+    try
+    {
+        $connect = new PDO($dsn, $user, $pass, $opt);
+    } 
+    catch (PDOException $e)
+    {
+        echo $e->getMessage();
+        die("Sorry, er is een probleem met de verbinding met de database.");
     }
-}
-
-$conn = null;
 ?>
