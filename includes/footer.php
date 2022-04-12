@@ -60,9 +60,10 @@
                  </defs>
                     <g class="parallax">
                         <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(78, 0, 194" />
-                        <use xlink:href="#gentle-wave" x="48" y="2" fill="rgba(60, 103, 227)" />
-                        <use xlink:href="#gentle-wave" x="48" y="4" fill="rgba(93, 220, 255)" />
-                        <use xlink:href="#gentle-wave" x="48" y="6" fill="#fff" />
+                        <use xlink:href="#gentle-wave" x="48" y="2" fill="#CFBFF7" />
+                        <use xlink:href="#gentle-wave" x="48" y="4" fill="rgba(60, 103, 227)" />
+                        <use xlink:href="#gentle-wave" x="48" y="6" fill="rgba(93, 220, 255)" />
+                        <use xlink:href="#gentle-wave" x="48" y="8" fill="#fff" />
                     </g>
                 </svg>
             </div>

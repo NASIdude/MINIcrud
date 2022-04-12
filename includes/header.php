@@ -15,11 +15,10 @@
     <header>
         <nav id="navbar">
             <ul>
-                <li><a href="https://github.com/" target="_blank">Github</a></li>
-                <li><a href="https://www.minecraft.net/nl-nl"  target="_blank">Minecraft</a></li>
-                <li><a href="https://www.nintendo.nl/#" target="_blank">Nintendo</a></li>
-                <li><a href="https://www.w3schools.com//" target="_blank">W3Schools</a></li>
-                <li><a href=""></a></li>
+                <li><a href="http://localhost/MINIcrud/">Home</a></li>
+                <li><a href="http://localhost/MINIcrud/menu.php">Menu</a></li>
+                <li><a href="https://www.nintendo.nl/#">Nintendo</a></li>
+                <li><a href="https://www.w3schools.com//">W3Schools</a></li>
             </ul>
         </nav>
     </header>
