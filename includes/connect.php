@@ -21,4 +21,5 @@
         echo $e->getMessage();
         die("Sorry, er is een probleem met de verbinding met de database.");
     }
+
 ?>
