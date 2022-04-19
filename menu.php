@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
-    <link rel="stylesheet" href="minicrud css/MiniCRUD.css">
+    <link rel="stylesheet" href="css/MiniCRUD.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
@@ -17,6 +17,7 @@
         ?>
     </header>
     <main>
+        
             <h4>Hier onze menu!</h4>
             <div class="menu">
                 <div class="menu-item1">
@@ -103,7 +104,22 @@
                         </div>
                     </div>
                 </div>
+                <div class="menu-item7">
+                    <div class="menu-foto">
+                        <img src="afbeeldingen/tom and jerry sus.gif" alt="Calzone Pizza">
+                        <div class="naam">
+                            Calzone Pizza
+                            <div class="beschrijving">
+                                Salami, paprika, Italiaanse kruiden, mozzarella en olijfolie.
+                            </div>
+                            <div class="prijs">
+                                €8,99
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+    
             
     </main>
     <footer>
