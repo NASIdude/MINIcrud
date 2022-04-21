@@ -1,3 +1,14 @@
+<?php
+    include('includes/connect.php');
+
+    $sql = "SELECT * FROM menu";
+    $stmt = $connect->prepare($sql);
+    // HIRE KUNNEN WE PARAMETERS VINDEN ALS DIE ER ZIJN
+    $stmt->execute();
+    $rowCount = $stmt->rowCount();
+    $result = $stmt->fetchAll();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,110 +28,33 @@
         ?>
     </header>
     <main>
-        
-            <h4>Hier onze menu!</h4>
-            <div class="menu">
-                <div class="menu-item1">
-                    <div class="menu-foto1">
-                        <img src="afbeeldingen/pizza margherita.jpg" alt="Pizza Margherita">
-                        <div class="naam">
-                            Pizza Margherita
-                            <div class="beschrijving">
-                                Tomaat, mozzarella, verse basilicum.
-                            </div>
-                            <div class="prijs">
-                                €5,99
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu-item2">
-                    <div class="menu-foto">
-                        <img src="afbeeldingen/Pizza Marinara.jpg" alt="Pizza Marinara">
-                        <div class="naam">
-                            Pizza Marinara
-                            <div class="beschrijving">
-                                Tomaat, knoflook, oregano en extra vergine olijfolie.
-                            </div>
-                            <div class="prijs">
-                                €7,99
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu-item3">
-                    <div class="menu-foto">
-                        <img src="afbeeldingen/pizza alla diavola.jpg" alt="Pizza alla Diavola">
-                        <div class="naam">
-                            Pizza alla Diavola
-                            <div class="beschrijving">
-                                Tomaat, mozzarella, oregano, salami en extra vierge olijfolie.
-                            </div>
-                            <div class="prijs">
-                                €7,99
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu-item4">
-                    <div class="menu-foto">
-                        <img src="afbeeldingen/Pizza tonno.jpg" alt="Pizza Tonno">
-                        <div class="naam">
-                            Pizza Tonno
-                            <div class="beschrijving">
-                                Rode ui, mozzarella, tonijn, pesto rosso, rucola en extra vierge olijfolie.
-                            </div>
-                            <div class="prijs">
-                                €7,99
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu-item5">
-                    <div class="menu-foto">
-                        <img src="afbeeldingen/pizza vegetariana.jpg" alt="Pizza Vegetariana">
-                        <div class="naam">
-                            Pizza Vegetariana
-                            <div class="beschrijving">
-                                Rode ui, paprika, courgette, feta en verse basilicum.
-                            </div>
-                            <div class="prijs">
-                                €5,99
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu-item6">
-                    <div class="menu-foto">
-                        <img src="afbeeldingen/calzone-met-gehakt.png" alt="Calzone Pizza">
-                        <div class="naam">
-                            Calzone Pizza
-                            <div class="beschrijving">
-                                Salami, paprika, Italiaanse kruiden, mozzarella en olijfolie.
-                            </div>
-                            <div class="prijs">
-                                €8,99
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu-item7">
-                    <div class="menu-foto">
-                        <img src="afbeeldingen/tom and jerry sus.gif" alt="Calzone Pizza">
-                        <div class="naam">
-                            Calzone Pizza
-                            <div class="beschrijving">
-                                Salami, paprika, Italiaanse kruiden, mozzarella en olijfolie.
-                            </div>
-                            <div class="prijs">
-                                €8,99
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            
+    <div class="menu-container">
+            <p>Onze menu!</p>
+            <table class="menu-table">
+                <tr>
+                    <th>naam</th>
+                    <th>beschrijving</th>
+                    <th>prijs</th>
+                    <th>categorie</th>
+                </tr>
+                <?php
+                    if($rowCount > 0) {
+                        foreach($result as $row) {
+                    
+                    ?>
+                            <tr>
+                                <td><?php echo $row['naam'];?></td>
+                                <td><?php echo $row['beschrijving'];?></td>
+                                <td><?php echo $row['prijs'];?></td>
+                                <td><?php echo $row['categorie'];?></td>
+                            </tr>
+
+                            <?php   }   
+                    }
+                    ?>
+                
+            </table>
+        </div>
     </main>
     <footer>
         <?php
