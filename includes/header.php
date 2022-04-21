@@ -17,7 +17,7 @@
             <ul>
                 <li><a href="http://localhost/MINIcrud/">Home</a></li>
                 <li><a href="http://localhost/MINIcrud/menu.php">Menu</a></li>
-                <li><a href="https://www.nintendo.nl/#">Nintendo</a></li>
+                <li><a href="http://localhost/MINIcrud/gallerij.php">Galerij</a></li>
                 <li><a href="https://www.w3schools.com//">W3Schools</a></li>
             </ul>
         </nav>
