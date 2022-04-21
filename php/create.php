@@ -29,19 +29,19 @@
 <body> 
     <main>
         <div class="create-form">
-        <h2>Voeg hier een gerecht toe</h2>
+            <h2>Voeg hier een gerecht toe</h2>
             <form action="create.php" method="post">
-            <label for="naam">Naam gerecht</label>
-            <input type="text" name="naam" placeholder="Naam gerecht">
-            <label for="beschrijving">Beschrijving gerecht</label>
-            <input type="textarea" name="beschrijving" placeholder="Beschrijving gerecht" id="beschrijving">
-            <label for="prijs">Prijs gerecht</label>
-            <input type="text" name="prijs" placeholder="Prijs gerecht" id="prijs">
-            <label for="phone">Categorie</label>
-            <input type="text" name="categorie" placeholder="Categorie" id="categorie">
-            <input type="submit" name="sumbit" value="create">
-        </form>
-    </div>
+                <label for="naam">Naam gerecht</label>
+                <input type="text" name="naam" placeholder="Naam gerecht">
+                <label for="beschrijving">Beschrijving gerecht</label>
+                <input type="textarea" name="beschrijving" placeholder="Beschrijving gerecht" id="beschrijving">
+                <label for="prijs">Prijs gerecht</label>
+                <input type="text" name="prijs" placeholder="Prijs gerecht" id="prijs">
+                <label for="phone">Categorie</label>
+                <input type="text" name="categorie" placeholder="Categorie" id="categorie">
+                <input type="submit" name="sumbit" value="create">
+            </form>
+        </div>
     <div class="button-goback-read">
         <p>Als u wilt dat er centen op staat doe, dan een punt in plaats van een komma( , ).</p>
         <a href="read.php">Ga terug</a>

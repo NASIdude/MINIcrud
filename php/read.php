@@ -1,6 +1,6 @@
 <?php
     include("../includes/connect.php");
-
+    
     $sql = "SELECT * FROM menu";
     $stmt = $connect->prepare($sql);
     // HIRE KUNNEN WE PARAMETERS VINDEN ALS DIE ER ZIJN
@@ -19,11 +19,11 @@
 </head>
 <body>
     <div class="menu-container">
-            <p>Voeg hier een gerechten toe!</p>
+            <p>Welkom Admin!</p>
             <a href="create.php">Voeg hier een gerecht toe</a>
             <table class="table">
                 <tr>
-                    <th>ID</th>
+                    <th>id</th>
                     <th>naam</th>
                     <th>beschrijving</th>
                     <th>prijs</th>
@@ -41,8 +41,8 @@
                                 <td><?php echo $row['prijs'];?></td>
                                 <td><?php echo $row['categorie'];?></td>
                                 <td><a class="creëer-knop" href="create.php?id=<?php echo $row['id']; ?>">
-                                </a><a class="update-knop" href="update.php?id=<?php echo $row['id']; ?>">
-                                update</a>&nbsp;<a class="delete-knop" href="delete.php?id=<?php echo $row['id']; ?>">
+                                </a><a class="update-knop" href="update.php?id=<?php echo $row['id']; ?>" name="update">
+                                update</a>&nbsp;<a class="delete-knop" href="delete.php?id=<?php echo $row['id']; ?>"  name="delete">
                                 delete</a></td>
                             </tr>
 

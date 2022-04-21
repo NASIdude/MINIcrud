@@ -1,17 +1,17 @@
 <?php
-    include("../includes/connect.php");
-    
+    include_once("../includes/connect.php");
+
     if (isset($_POST['update'])) {
 
-        $sql = "UPDATE menu SET naam = :naam, beschrijving = :beschrijving, prijs = :prijs, beschrijving = :beschrijving WHERE id = :id";
-    
-        $stmt = $connect->prepare($sql);
-        $stmt->bindParam(":id", $_POST['id-gerecht']);    
-        $stmt->bindParam(":naam", $_POST['update-gerecht']);
-        $stmt->bindParam(":beschrijving", $_POST['update-beschrijving']);
-        $stmt->bindParam(":prijs", $_POST['update-prijs']);
-        $stmt->bindParam(":categorie", $_POST['update-categorie']);
-        $stmt->execute();
+            $sql = "UPDATE menu SET naam = :naam, beschrijving = :beschrijving, prijs = :prijs, categorie = :categorie WHERE id = :id";
+        
+            $stmt = $connect->prepare($sql);
+            $stmt->bindParam(":id", $_POST['id']);
+            $stmt->bindParam(":naam", $_POST['naam']);
+            $stmt->bindParam(":beschrijving", $_POST['beschrijving']);
+            $stmt->bindParam(":prijs", $_POST['prijs']);
+            $stmt->bindParam(":categorie", $_POST['categorie']);
+            $stmt->execute();
         
         header("Location: http://localhost/MINIcrud/php/read.php"); 
         exit();
@@ -28,21 +28,23 @@
 </head>
 <body>
     <div class="update-form">
-        <h2>Update hier je gerecht</h2>
-        <form action="http://localhost/MINIcrud/php/read.php" method="post">
-            <input type="hidden" name="id" value="id">
-            <label for="update-naam">Update gerecht</label><br>
-            <input type="text" id="update-naam" name="update-gerecht" placeholder="Naam gerecht"><br>
-            <label for="update-beschrijving">Update beschrijving</label><br>
-            <input type="textarea" id="update-beschrijving" name="update-beschrijving" placeholder="beschrijving gerecht"><br>
-            <label for="update-prijs">Update prijs</label><br>
-            <input type="text" id="update-prijs" name="update-prijs" placeholder="Update gerecht"><br>
-            <label for="update-categorie">Update Categorie</label><br>
-            <input type="text" id="update-categorie" name="update-beschrijving" placeholder="Update categorie"><br><br>
-            <input type="submit" value="update" name="update">
+        <h2>Update hier een gerecht</h2>
+        <form action="#" method="post">
+            <label for="naam">Huidig ID</label>
+            <input type="text" name="id" placeholder="Naam gerecht" value="<?php echo $_GET['id']; ?>" readonly>
+            <label for="naam">Naam gerecht</label>
+            <input type="text" name="naam" placeholder="Naam gerecht">
+            <label for="beschrijving">Beschrijving gerecht</label>
+            <input type="textarea" name="beschrijving" placeholder="Beschrijving gerecht" id="beschrijving">
+            <label for="prijs">Prijs gerecht</label>
+            <input type="text" name="prijs" placeholder="Prijs gerecht" id="prijs">
+            <label for="categorie">Categorie</label>
+            <input type="text" name="categorie" placeholder="Categorie" id="categorie">
+            <input type="submit" name="update" value="update">
         </form>
+    </div>
         <div class="return-knop-update">
-            <p><a href="read.php">Ga terug</a></p>
+            <p><a href="read.php">Stoppen</a></p>
         </div>
     </div>
 </body>
