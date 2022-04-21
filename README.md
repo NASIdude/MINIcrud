@@ -2,6 +2,8 @@
 
 Een website voor een pizzeria (Ling Ling's Pizzeria 🍕).
 
+Dit is de homepagina.
+
 ![image](https://user-images.githubusercontent.com/94040596/164484682-1a297b44-063a-44bb-9151-36e5cabdfd0d.png)
 
 ![image](https://user-images.githubusercontent.com/94040596/164484825-f0aebf1b-47d2-4eb7-95b4-f57b056adbfa.png)
