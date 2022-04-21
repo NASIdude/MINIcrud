@@ -166,6 +166,7 @@ li a:hover {
 }
 
 main {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -567,61 +568,86 @@ h4 {
   color: #fff;
 }
 
-.menu {
-  position: relative;
+.menu-container {
+  color: #fff;
   width: 100%;
   height: auto;
   padding: 20px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: baseline;
-  align-content: flex-start;
-  background-image: linear-gradient(#5ddcff, #3c67e3, #a58fdf, #4e00c2);
 }
 
-.naam,
-.beschrijving,
-.prijs {
-  color: #fff;
-}
-
-.menu-foto1 img {
-  width: 30%;
+.menu-table {
+  padding: 10px;
+  width: 100%;
   height: auto;
-}
-
-.menu-foto img {
-  width: 1200px;
-  height: auto;
-}
-
-.menu-item1 {
-  margin: 5px;
-}
-
-.menu-item2 {
-  margin: 5px;
-}
-
-.menu-item3 {
-  margin: 5px;
-}
-
-.menu-item4 {
-  margin: 5px;
-}
-
-.menu-item5 {
-  margin: 5px;
-}
-
-.menu-item6 {
-  margin: 5px;
 }
 
 /*einde menu css*/
+
+/*  Gallerij  */
+
+.tekst-galerij {
+  position: absolute;
+  top: 55px;
+  left: 42%;
+}
+
+.tekst-galerij h1 {
+  position: absolute;
+  top: 55px;
+  left: 42%;
+  color: #fff;
+  font-weight: 700;
+}
+
+.galerij {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.galerij img {
+  margin: 10px;
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1350px) {
+  .tekst-galerij h1 {
+    left: 42%;
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .tekst-galerij h1 {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .tekst-galerij h1 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .tekst-galerij h1 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .tekst-galerij h1 {
+    left: 45%;
+    font-size: 10px;
+  }
+}
+
+/*  Gallerij  */
 
 /* einde main */
 
