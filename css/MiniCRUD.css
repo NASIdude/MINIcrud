@@ -569,7 +569,7 @@ h4 {
 }
 
 .menu-container {
-  color: #000;
+  color: #fff;
   width: 100%;
   height: auto;
   padding: 20px;
@@ -583,7 +583,7 @@ h4 {
 
 /*einde menu css*/
 
-/*  Gallerij  */
+/*  begin galerij  */
 
 .tekst-galerij {
   position: absolute;
@@ -595,7 +595,7 @@ h4 {
   position: absolute;
   top: 55px;
   left: 42%;
-  color: #000;
+  color: #fff;
   font-weight: 700;
 }
 
@@ -647,7 +647,7 @@ h4 {
   }
 }
 
-/*  Gallerij  */
+/*  einde galerij  */
 
 /* einde main */
 
