@@ -15,10 +15,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Read</title>
 </head>
 <body>
-    <div class="container">
+    <div class="menu-container">
             <p>Voeg hier een gerechten toe!</p>
             <a href="create.php">Voeg hier een gerecht toe</a>
             <table class="table">
@@ -35,14 +35,14 @@
                     
                     ?>
                             <tr>
-                                <td><?php echo $row['ID'];?></td>
+                                <td><?php echo $row['id'];?></td>
                                 <td><?php echo $row['naam'];?></td>
                                 <td><?php echo $row['beschrijving'];?></td>
                                 <td><?php echo $row['prijs'];?></td>
                                 <td><?php echo $row['categorie'];?></td>
-                                <td><a class="creëer-knop" href="create.php?id=<?php echo $row['ID']; ?>">
-                                </a><a class="update-knop" href="update.php?id=<?php echo $row['ID']; ?>">
-                                update</a>&nbsp;<a class="delete-knop" href="delete.php?id=<?php echo $row['ID']; ?>">
+                                <td><a class="creëer-knop" href="create.php?id=<?php echo $row['id']; ?>">
+                                </a><a class="update-knop" href="update.php?id=<?php echo $row['id']; ?>">
+                                update</a>&nbsp;<a class="delete-knop" href="delete.php?id=<?php echo $row['id']; ?>">
                                 delete</a></td>
                             </tr>
 

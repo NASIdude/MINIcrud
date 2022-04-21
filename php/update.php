@@ -1,51 +1,49 @@
 <?php
     include("../includes/connect.php");
-    $msg = "";
+    
+    if (isset($_POST['update'])) {
 
-    if (isset($_POST['update']) && isset($_POST['id'])) {
-        $sql = "UPDATE menu SET naam = :naam, beschrijving = :beschrijving, prijs = :prijs, categorie = :categorie WHERE id = :id";
-          
+        $sql = "UPDATE menu SET naam = :naam, beschrijving = :beschrijving, prijs = :prijs, beschrijving = :beschrijving WHERE id = :id";
+    
         $stmt = $connect->prepare($sql);
-        $stmt->bindParam(":naam", $_POST['naam']);
-        $stmt->bindParam(":beschrijving", $_POST['beschrijving']);
-        $stmt->bindParam(":prijs", $_POST['prijs']);
-        $stmt->bindParam(":categorie", $_POST['categorie']);
+        $stmt->bindParam(":id", $_POST['id-gerecht']);    
+        $stmt->bindParam(":naam", $_POST['update-gerecht']);
+        $stmt->bindParam(":beschrijving", $_POST['update-beschrijving']);
+        $stmt->bindParam(":prijs", $_POST['update-prijs']);
+        $stmt->bindParam(":categorie", $_POST['update-categorie']);
         $stmt->execute();
-
-        $msg = "Gerecht is geupdated"
         
-        header("Location: php/read.php");
+        header("Location: http://localhost/MINIcrud/php/read.php"); 
         exit();
-    }
+    };
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create</title>
+    <title>Update</title>
     <link rel="stylesheet" href="css/MiniCRUD.css">
 </head>
-<body> 
-    <main>
-        <div class="update form">
-        <h2>Update hier het gerecht!</h2>
-            <form action="create.php" method="post">
-            <label for="naam">Naam gerecht</label>
-            <input type="text" name="naam" placeholder="Naam gerecht">
-            <label for="beschrijving">Beschrijving gerecht</label>
-            <input type="textarea" name="beschrijving" placeholder="Beschrijving gerecht" id="beschrijving">
-            <label for="prijs">Prijs gerecht</label>
-            <input type="text" name="prijs" placeholder="Prijs gerecht" id="prijs">
-            <label for="phone">Categorie</label>
-            <input type="text" name="categorie" placeholder="Categorie" id="categorie">
-            <!-- <label for="created">Datum</label>
-            <input type="datum" name="datum" value="<?=date('Y-m-d\TH:i')?>" id="datum"> -->
-            <input type="submit" name="update">
+<body>
+    <div class="update-form">
+        <h2>Update hier je gerecht</h2>
+        <form action="http://localhost/MINIcrud/php/read.php" method="post">
+            <input type="hidden" name="id" value="id">
+            <label for="update-naam">Update gerecht</label><br>
+            <input type="text" id="update-naam" name="update-gerecht" placeholder="Naam gerecht"><br>
+            <label for="update-beschrijving">Update beschrijving</label><br>
+            <input type="textarea" id="update-beschrijving" name="update-beschrijving" placeholder="beschrijving gerecht"><br>
+            <label for="update-prijs">Update prijs</label><br>
+            <input type="text" id="update-prijs" name="update-prijs" placeholder="Update gerecht"><br>
+            <label for="update-categorie">Update Categorie</label><br>
+            <input type="text" id="update-categorie" name="update-beschrijving" placeholder="Update categorie"><br><br>
+            <input type="submit" value="update" name="update">
         </form>
+        <div class="return-knop-update">
+            <p><a href="read.php">Ga terug</a></p>
+        </div>
     </div>
-    </main>
 </body>
 </html>
