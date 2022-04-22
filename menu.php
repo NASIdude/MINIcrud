@@ -1,12 +1,17 @@
 <?php
-    include('includes/connect.php');
-
-    $sql = "SELECT * FROM menu";
-    $stmt = $connect->prepare($sql);
-    // HIRE KUNNEN WE PARAMETERS VINDEN ALS DIE ER ZIJN
-    $stmt->execute();
-    $rowCount = $stmt->rowCount();
-    $result = $stmt->fetchAll();
+    include("../includes/connect.php");
+    
+    if(isset('submit')) {
+        $search = $_POST['search']
+        $sql = "SELECT * FROM menu WHERE naam LIKE '%".$_POST["searchbar"]."%' ";
+        $stmt = $connect->prepare($sql);
+        $stmt->execute();
+        $rowCount = $stmt->rowCount();
+        $result = $stmt->fetchAll();
+    }
+    else {
+        $sql = "SELECT * FROM menu";
+    }
 ?>
 
 <!DOCTYPE html>
@@ -28,6 +33,13 @@
         ?>
     </header>
     <main>
+        <div class="searchbar">
+            <form method="POST">
+                <input type="text" placeholder="Zoek hier het gerecht" name="search">
+                <button type="submit" name="submit" >Submit</button>
+            </form>
+        </div>
+        
     <div class="menu-container">
             <p>Onze menu!</p>
             <table class="menu-table">
