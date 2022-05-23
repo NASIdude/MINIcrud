@@ -44,7 +44,7 @@
             <img class="mySlides" src="afbeeldingen/foto8 slideshow.jpg">
         </div>
         <div class="menu-link">
-            <a href="menu.php">Bestel hier je eten!</a>
+            <a href="menu.php">Bekijk hier onze menu!</a>
         </div>
     </main>
     <footer>

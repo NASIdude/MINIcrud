@@ -1,33 +1,28 @@
-<?php
-    include_once("includes/session.php");
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin</title>
+    <title>login</title>
     <link rel="stylesheet" href="css/MiniCRUD.css">
 </head>
 <body>
-    <header>
-        <nav id="navbar">
-            <ul>
-                <li><a href="php/logout.php">Uitloggen</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="admin">
-    <h1>Welkom admin!</h1>
-        <a href="php/logout.php">Log hier uit!</a>
+    <div class="return-home">
+        <a href="home.php">Ga terug naar home!</a>
     </div>
-    <div class="menu-aanpassen">
-        <a href="php/read.php">Pas hier het menu aan, kijk hier ook de berichten van klanten!</a>
+    <div class="login-scherm">
+        <form action="php/checklogin.php" method="post">
+            <label for="gebruiker"><b>Gebruikers naam</b></label><br>
+            <input type="text" placeholder="Vul gebruikers naam. . ." name="gebruiker" required><br>
+            <label for="wachtwoord"><b>Wachtwoord gebruiker</b></label><br>
+            <input type="password" placeholder="Vul gebruikers wachtwoord" name="wachtwoord" required><br>
+            <button type="submit" name="submit" value="submit">Login</button>
+        </form>
     </div>
     <footer>
     <div class="inner-footer flex"></div>
-            <div>   
+            <div>
             <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                 viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
             <defs>
@@ -43,6 +38,6 @@
                 </svg>
             </div>
     </footer>
-    <script src="javascript/menu.js"></script>
+    <script src="javascript/alles.js"></script>
 </body>
 </html>

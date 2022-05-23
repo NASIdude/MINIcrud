@@ -7,6 +7,7 @@
     $stmt->execute();
     $rowCount = $stmt->rowCount();
     $result = $stmt->fetchAll();
+    
 ?>
 
 <!DOCTYPE html>
